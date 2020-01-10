@@ -14,7 +14,7 @@ exports.up = async function(knex) {
     table.increments("id");
     table.string("step_by_step");
     table
-      .integer("recipes_id")
+      .integer("recipe_id")
       .notNullable()
       .references("id")
       .inTable("recipes")
